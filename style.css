@@ -1,0 +1,26 @@
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f16;color:#f3f6fb;display:flex;align-items:center;justify-content:center}
+.wrap{width:clamp(360px,96vw,900px);padding:20px 18px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.title{font-weight:700;letter-spacing:.2px;font-size:clamp(18px,3.5vw,24px)}
+.scoreCol{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.score{font-weight:700;background:#d6007e;border:2px solid #d6007e;color:#9dffc5;border-radius:10px;padding:8px 14px;min-width:60px;text-align:center;font-size:clamp(14px,2.2vw,18px)}
+#game{width:100%;height:auto;border-radius:18px;display:block;border:10px solid #ffc1cc;background:#dff4ff;max-height:82vh}
+.controls{display:flex;gap:14px;justify-content:space-between;margin-top:14px}
+.controls button{flex:1;border:none;border-radius:999px;padding:clamp(12px,2.4vw,18px) 12px;font-weight:700;letter-spacing:.2px;background:#ffd24a;color:#1b2100;box-shadow:0 4px 0 #d5a400;cursor:pointer;transition:transform .05s ease;font-size:clamp(16px,2.6vw,22px)}
+.controls button:active{transform:translateY(2px);box-shadow:0 2px 0 #d5a400}
+#leftBtn.is-pressed,#rightBtn.is-pressed{transform:translateY(2px);box-shadow:0 2px 0 #d5a400}
+#resetBtn{flex:0 0 30%;;background:#4a8cff;color:#031a38;box-shadow:0 4px 0 #2a5fb3}
+.help{text-align:center;margin-top:10px;opacity:.8;font-size:clamp(13px,2vw,18px)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;padding:20px}
+.overlay.show{display:flex}
+.overlay-card{background:#ffffff;border:4px solid #ffc1cc;color:#1a1030;border-radius:14px;min-width:260px;max-width:90vw;padding:20px 18px;text-align:center;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.overlay-title{font-weight:700;font-size:26px;color:#d6007e}
+.overlay-sub{opacity:.8;margin:6px 0 14px}
+.overlay-card button{border:none;border-radius:999px;padding:12px 18px;font-weight:700;background:#d6007e;color:#fff;box-shadow:0 4px 0 #9c005a;cursor:pointer}
+@media (min-width: 900px){
+  .wrap{width:clamp(520px,60vw,820px)}
+}
+@media (max-width: 360px){
+  .wrap{padding:12px 10px}
+  .help{font-size:12px}
+}
