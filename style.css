@@ -1,5 +1,5 @@
 *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f16;color:#f3f6fb;display:flex;align-items:center;justify-content:center}
-.wrap{width:clamp(360px,96vw,900px);padding:20px 18px}
+.wrap{width:clamp(320px,100vw,420px);padding:20px 18px}
 .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .title{font-weight:700;letter-spacing:.2px;font-size:clamp(18px,3.5vw,24px)}
 .scoreCol{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
@@ -18,7 +18,7 @@
 .overlay-sub{opacity:.8;margin:6px 0 14px}
 .overlay-card button{border:none;border-radius:999px;padding:12px 18px;font-weight:700;background:#d6007e;color:#fff;box-shadow:0 4px 0 #9c005a;cursor:pointer}
 @media (min-width: 900px){
-  .wrap{width:clamp(520px,60vw,820px)}
+  .wrap{width:420px}
 }
 @media (max-width: 360px){
   .wrap{padding:12px 10px}
